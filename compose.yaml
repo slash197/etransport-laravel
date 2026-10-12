@@ -1,0 +1,13 @@
+services:
+  php:
+    build:
+      context: docker
+      args:
+        PHP_VERSION: ${PHP_VERSION:-8.2}
+    user: "${UID:-1000}:${GID:-1000}"
+    working_dir: /app
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - .:/app
