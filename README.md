@@ -5,7 +5,7 @@
 
 Laravel bridge for [slash197/etransport](https://github.com/slash197/etransport), the PHP client for ANAF's RO e-Transport system.
 
-> **Status: 0.x.** The API of this package may still change before 1.0. See the [changelog](CHANGELOG.md).
+> **Status: 0.x.** Verified against ANAF's test environment, but the API of this package may still change before 1.0. See the [changelog](CHANGELOG.md).
 
 Declaring a transport is not a single HTTP call. An upload only confirms that ANAF received the message; whether it was accepted, and for a notification its UIT's final state, is known a minute or more later and has to be asked for, within ANAF's daily limits. This package takes care of that part for a Laravel application:
 
